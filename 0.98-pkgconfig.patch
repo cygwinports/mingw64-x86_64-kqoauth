@@ -1,12 +1,3 @@
---- origsrc/kQOAuth/src/pcfile.sh	2013-12-25 14:11:16.000000000 -0600
-+++ src/kQOAuth/src/pcfile.sh	2013-12-25 14:19:18.007979800 -0600
-@@ -11,5 +11,5 @@ Name: KQOAuth
- Description: Qt OAuth support library
- Version: $2
- Requires: QtCore QtNetwork
--Libs: -L\${libdir} -lkqoauth
-+Libs: -L\${libdir} -lkqoauth0
- Cflags: -I\${includedir}" > kqoauth.pc
 --- origsrc/kQOAuth/src/src.pro	2013-12-25 14:11:16.000000000 -0600
 +++ src/kQOAuth/src/src.pro	2013-12-25 14:18:59.525922700 -0600
 @@ -89,11 +89,18 @@ else:unix {

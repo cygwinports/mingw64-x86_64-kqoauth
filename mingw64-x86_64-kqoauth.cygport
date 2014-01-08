@@ -5,7 +5,7 @@ inherit git cross qt4-qmake
 
 NAME="mingw64-x86_64-kqoauth"
 VERSION=0.98
-RELEASE=1
+RELEASE=2
 CATEGORY="Devel"
 SUMMARY="Qt OAuth library for Win64 toolchain"
 DESCRIPTION="kQOAuth is a OAuth 1.0 library written for Qt in C++. The goals
