@@ -1,11 +1,9 @@
 CROSS_HOST="x86_64-w64-mingw32"
-GIT_URI="https://github.com/kypeli/kQOAuth.git"
-GIT_TAG=${PV}
-inherit git cross qt4-qmake
+inherit cross qt4-qmake
 
 NAME="mingw64-x86_64-kqoauth"
 VERSION=0.98
-RELEASE=2
+RELEASE=3
 CATEGORY="Devel"
 SUMMARY="Qt OAuth library for Win64 toolchain"
 DESCRIPTION="kQOAuth is a OAuth 1.0 library written for Qt in C++. The goals
@@ -13,5 +11,7 @@ for the library have been to provide easy integration to existing Qt
 applications utilizing Qt signals describing the OAuth process, and to
 provide a convenient approach to OAuth authentication."
 HOMEPAGE="https://github.com/kypeli/kQOAuth/"
+SRC_URI="https://github.com/kypeli/kQOAuth/archive/${VERSION}/kQOAuth-${VERSION}.tar.gz"
+SRC_DIR="kQOAuth-${VERSION}"
 
 PATCH_URI="0.98-pkgconfig.patch"
